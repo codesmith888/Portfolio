@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesmith888/Portfolio.git"
+  },
+  "author": "Caitlin Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codesmith888/Portfolio/issues"
+  },
+  "homepage": "https://github.com/codesmith888/Portfolio#readme",
+  "dependencies": {
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
