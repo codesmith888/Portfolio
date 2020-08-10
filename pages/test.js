@@ -1,8 +1,9 @@
-export default function Test() {
+export default function Test({queryParam}) {
+  let name = queryParam
   return (
     <>
     <h1 id="hello">
-      Hi! I'm Caitlin: 
+      Hi {name}!
     </h1>
     <style jsx>
       {`
