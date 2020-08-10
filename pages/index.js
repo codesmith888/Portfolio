@@ -7,6 +7,12 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link 
+          rel="preload"
+          href='/fonts/Education-Pencil.ttf.woff'
+          as="font"
+          crossOrigin=""
+        />
       </Head>
 
       <main className={styles.main}>

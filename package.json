@@ -21,6 +21,7 @@
   "homepage": "https://github.com/codesmith888/Portfolio#readme",
   "dependencies": {
     "next": "^9.5.1",
+    "nextjs-fonts": "^0.22.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
