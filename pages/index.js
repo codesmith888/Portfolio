@@ -6,13 +6,13 @@ import Resume from './Resume'
 import { Link } from 'next/link'
 import { Redirect } from 'react-router-dom'
 
-const MyButton = React.forwardRef(({ onClick, href }, ref) => {
-  return (
-    <a href={href} onClick={onClick} ref={ref}>
-      View Resume
-    </a>
-  )
-})
+// const MyButton = React.forwardRef(({ onClick, href }, ref) => {
+//   return (
+//     <a href={href} onClick={onClick} ref={ref}>
+//       View Resume
+//     </a>
+//   )
+// })
 
 export default function Index() {
   
@@ -59,8 +59,8 @@ export default function Index() {
             <div className="col">
               <h1 className={styles.title}>Hi! I'm Caitlin:</h1>
               <h2 className={styles.introTwo}>Full stack web developer, educator and lifelong learner with a passion for creating new and innovative ways to present information and ideas. An effective communicator and collaborator motivated by the opportunity to combine education and technology in order to produce data-driven outcomes, imaginative ideas and products that inspire. </h2>
-              <Link id="resume" href="/resume" passHref>
-                <MyButton id= {styles.resumeButton} className="btn btn-lg btn-primary"/>
+              <Link id="resume" href="/resume">
+                <button id= {styles.resumeButton} className="btn btn-lg btn-primary"/>
               </Link>
             </div>
             <div className="col">
