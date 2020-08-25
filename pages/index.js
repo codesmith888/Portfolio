@@ -30,6 +30,7 @@ export default function Home() {
         <meta charset="UTF-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+        </Head>
         <style jsx global>
               {`
                 @font-face {
@@ -43,7 +44,7 @@ export default function Home() {
                 }
               `}
         </style>
-      </Head>
+    
 
       <main> 
         <div className={styles.home}>
@@ -54,7 +55,9 @@ export default function Home() {
             <div className="col">
               <h1 className={styles.title}>Hi! I'm Caitlin:</h1>
               <h2 className={styles.introTwo}>Full stack web developer, educator and lifelong learner with a passion for creating new and innovative ways to present information and ideas. An effective communicator and collaborator motivated by the opportunity to combine education and technology in order to produce data-driven outcomes, imaginative ideas and products that inspire. </h2>
+              <Link href="/resume">
               <button id= {styles.resumeButton} className="btn btn-lg btn-primary">Resume</button>
+              </Link>
             </div>
             <div className="col">
               <img id={styles.profilePhoto} src="/photo.png"/> 
@@ -113,6 +116,9 @@ export default function Home() {
           <footer className="footer">
             <p>Created by ©CodeSmith888</p>
           </footer>
+          </div>
+      </main>
+
           <style jsx>
             {`
               #home {
@@ -121,8 +127,7 @@ export default function Home() {
               }
             `}
           </style>
-        </div>
-      </main>
+      
   </div>
   )
 }
