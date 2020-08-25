@@ -59,7 +59,7 @@ export default function Index() {
             <div className="col">
               <h1 className={styles.title}>Hi! I'm Caitlin:</h1>
               <h2 className={styles.introTwo}>Full stack web developer, educator and lifelong learner with a passion for creating new and innovative ways to present information and ideas. An effective communicator and collaborator motivated by the opportunity to combine education and technology in order to produce data-driven outcomes, imaginative ideas and products that inspire. </h2>
-              <Link id="resume" href="/Resume" passHref>
+              <Link id="resume" href="/resume" passHref>
                 <MyButton id= {styles.resumeButton} className="btn btn-lg btn-primary"/>
               </Link>
             </div>
