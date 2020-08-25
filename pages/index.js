@@ -54,9 +54,7 @@ export default function Home() {
             <div className="col">
               <h1 className={styles.title}>Hi! I'm Caitlin:</h1>
               <h2 className={styles.introTwo}>Full stack web developer, educator and lifelong learner with a passion for creating new and innovative ways to present information and ideas. An effective communicator and collaborator motivated by the opportunity to combine education and technology in order to produce data-driven outcomes, imaginative ideas and products that inspire. </h2>
-              <Link href="/resume">
-                <button id= {styles.resumeButton} className="btn btn-lg btn-primary"/>
-              </Link>
+              <button id= {styles.resumeButton} className="btn btn-lg btn-primary">Resume</button>
             </div>
             <div className="col">
               <img id={styles.profilePhoto} src="/photo.png"/> 
