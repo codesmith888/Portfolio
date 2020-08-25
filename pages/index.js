@@ -2,9 +2,10 @@ import Head from 'next/head'
 import React, { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
-import Resume from './Resume'
-import { Link } from 'next/link'
-import { Redirect } from 'react-router-dom'
+import Link from 'next/link'
+
+
+
 
 // const MyButton = React.forwardRef(({ onClick, href }, ref) => {
 //   return (
@@ -13,18 +14,12 @@ import { Redirect } from 'react-router-dom'
 //     </a>
 //   )
 // })
-
-export default function Index() {
+export default function Home() {
   
 
   function downloadResume() {
 
   }
-
-
-
-  
-  
   
   return (
     <div>
@@ -59,7 +54,7 @@ export default function Index() {
             <div className="col">
               <h1 className={styles.title}>Hi! I'm Caitlin:</h1>
               <h2 className={styles.introTwo}>Full stack web developer, educator and lifelong learner with a passion for creating new and innovative ways to present information and ideas. An effective communicator and collaborator motivated by the opportunity to combine education and technology in order to produce data-driven outcomes, imaginative ideas and products that inspire. </h2>
-              <Link id="resume" href="/resume">
+              <Link href="/resume">
                 <button id= {styles.resumeButton} className="btn btn-lg btn-primary"/>
               </Link>
             </div>
@@ -133,4 +128,7 @@ export default function Index() {
   </div>
   )
 }
+
+
+
 
