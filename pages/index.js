@@ -5,15 +5,6 @@ import Navbar from '../components/navbar'
 import Link from 'next/link'
 
 
-
-
-// const MyButton = React.forwardRef(({ onClick, href }, ref) => {
-//   return (
-//     <a href={href} onClick={onClick} ref={ref}>
-//       View Resume
-//     </a>
-//   )
-// })
 export default function Home() {
   
 
@@ -47,37 +38,85 @@ export default function Home() {
     
 
       <main> 
+        <Navbar />
         <div className={styles.home}>
-          <div className="row">
-            <Navbar />
-          </div>
           <div className="row">
             <div className="col">
               <h1 className={styles.title}>Hi! I'm Caitlin:</h1>
               <h2 className={styles.introTwo}>Full stack web developer, educator and lifelong learner with a passion for creating new and innovative ways to present information and ideas. An effective communicator and collaborator motivated by the opportunity to combine education and technology in order to produce data-driven outcomes, imaginative ideas and products that inspire. </h2>
-              <Link href="/resume">
-              <button id= {styles.resumeButton} className="btn btn-lg btn-primary">Resume</button>
+              <Link href="/caitlinESmithResume.pdf" target="_blank" download>
+                <button id= {styles.resumeButton} className="btn btn-lg btn-primary">Resume</button>
               </Link>
             </div>
             <div className="col">
-              <img id={styles.profilePhoto} src="/photo.png"/> 
+              <img id={styles.profilePhoto} src="/caitlinCropped.png"/> 
             </div>
           </div>
          
-          <h1 className={styles.title}>Skills:</h1>
-          <div className = {styles.skills}>
-            <img className="skillsImages" src="/javascriptlogo.png" />
-            <img className="skillsImages" src="/html.png" />
-            <img className="skillsImages" src="/css.png" />
-            <img className="skillsImages" src="/postgres.png" />
-            <img className="skillsImages" src="/python.png" />
+          <h1 className={styles.skillsTitle}>Skills:</h1>
+          <div className = "row">
+            <div className=" container col">
+              <img className="skillsImages" src="/javascriptlogo.png" />
+              <div className="skillName">
+                <div className="text">Javascript</div>
+              </div>
+            </div>
+            <div className=" container col">
+              <img className="skillsImages" src="/html.png" />
+              <div className="skillName">
+                <div className="text">HTML5</div>
+              </div>
+            </div>
+            <div className=" container col">
+              <img className="skillsImages" src="/css.png" />
+              <div className="skillName">
+                <div className="text">CSS</div>
+              </div>
+            </div>
+            <div className=" container col">
+              <img className="skillsImages" src="/postgres.png" />
+              <div className="skillName">
+                <div className="text">Postgres</div>
+              </div>
+            </div>
+            <div className=" container col">
+              <img className="skillsImages" src="/python.png" />
+              <div className="skillName">
+                <div className="text">HTML5</div>
+              </div>
+            </div>
           </div>
-          <div className={styles.skillsTwo}>
-            <img className="skillsImages" src="/nodejs.png" />
-            <img className="skillsImages" src="/react.png" />
-            <img className="skillsImages" src="/mongodb.png" />
-            <img className="skillsImages" src="/sequelize.png" />
-            <img className="skillsImages" src="/express.png" />
+          <div className="row">
+            <div className=" container col">
+              <img className="skillsImages" src="/nodejs.png" />
+              <div className="skillName">
+                <div className="text">NodeJS</div>
+              </div>
+            </div>
+            <div className=" container col">
+              <img className="skillsImages" src="/react.png" />
+              <div className="skillName">
+                <div className="text">ReactJS</div>
+              </div>
+            </div>
+            <div className=" container col"> 
+              <img className="skillsImages" src="/mongodb.png" />
+              <div className="skillName">
+                <div className="text">MongoDB</div>
+              </div>
+            </div>
+            <div className=" container col">
+              <img className="skillsImages" src="/sequelize.png" />
+              <div className="skillName">
+                <div className="text">Sequelize</div>
+              </div>
+            </div>
+            <div className=" container col">
+              <img className="skillsImages" src="/express.png" />
+              <div className="skillName">
+                <div className="text">Express</div>
+              </div>
+            </div>
           </div>
           <h1 className={styles.title}>Projects</h1>
           <div className="row">

@@ -1,28 +1,32 @@
-html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Education-Pencil';
   text-align: center;
-}
+  background: #d7d7d7;
+} 
 
 
-.nav {
+/* .nav {
   list-style: none;
   margin-right: 15vh;
-}
+} */
 
-.navbar-custom {
-  background: #d7d7d7;
+.navBar {
+  justify-content: space-evenly;
+  background-color: #F8b7B4;
+  color: #606060;
   width: 100%;
+  height: 10%;
+  font-family: 'Education-Pencil';
 }
 
 .navTitle {
   padding-left: 10vh;
   padding-right: 10vh;
   margin-bottom: 1vh;
-  color: #F8B7B4;
-  font-size: 18px;
+  color: #606060;
+  font-size: 32px;
 }
 
 .navTitle:hover {
@@ -34,11 +38,19 @@ body {
 .navItem {
   padding-right: 3vh;
   margin-bottom: 1vh;
-  color: #F8B7B4;
+  color: #606060;
+}
+
+.navItem:hover {
+  color: white;
+  opacity: 0.3;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: inline-block;
 }
 
 .navItem a {
-  color: #F8B7B4;
+  color: #606060;
 }
 
 .navItem a:hover {
@@ -46,13 +58,6 @@ body {
   text-decoration: none;
 }
 
-
-.skillsImages {
-  width: 100px;
-  height: 100px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
 
 #profilePhoto {
   width: 300px;
@@ -62,7 +67,8 @@ body {
 
 .socialMediaLinks {
   width: 50px;
-  height: 30px;
+  height: 50px;
+  justify-items: flex-end;
 }
 
 .col-3 {
@@ -81,8 +87,133 @@ body {
 
 .footer {
   justify-content: space-evenly;
-  background-color: #d7d7d7;
-  color: #F8B7B4;
+  background-color: #F8B7B4;
+  color: #606060;
   width: 100%;
   height: 10%;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.skillsImages {
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: inline-block;
+}
+
+.skillName {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .skillsImages {
+  opacity: 0.3;
+}
+
+.container:hover .skillName {
+  opacity: 1;
+}
+
+.text {
+  background-color: #F8B7B4;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.row {
+  position: inline-block;
+}
+
+.projectTitles {
+  color: #606060;
+  text-align: center;
+}
+
+.description {
+  font-size: 24px;
+  color: #F8B7B4;
+  text-align: center;
+}
+
+.links {
+  font-size: 24px;
+  color: #F8B7B4;
+  text-align: center;
+}
+
+.links:hover {
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.adulting101 {
+  padding: 0;
+  margin: 0;
+  color: #F8B7B4;
+  font-family: 'Education-Pencil';
+  text-align: center;
+  background-image: url("/marble.png")
+}
+
+.additionRocket {
+  padding: 0;
+  margin: 0;
+  color: #F8B7B4;
+  font-family: 'Education-Pencil';
+  text-align: center;
+  background-image: url("/marble.png")
+}
+
+.worldOfWonder {
+  padding: 0;
+  margin: 0;
+  color: #F8B7B4;
+  font-family: 'Education-Pencil';
+  text-align: center;
+  background-image: url("/marble.png")
+}
+
+#resumeButton {
+  background-color: #606060;
+  color: #F8B7B4;
+  margin-top: 5%;
+  border-color: #F8B7B4;
+}
+
+#resumeButton:hover {
+  background-color: #F8B7B4;
+  color: #606060;
+}
+
+.skillsRowOne {
+  position: inline-block;
+}
+
+.resume {
+  text-align: center; 
+  width: 80%;
+  height: 90%;
 }

@@ -10,9 +10,9 @@ export default function Resume() {
   return (
     <div id="Resume">
       <Navbar />
-      <img src="/resume.png"/>
-      <Link href="/files/myfile.pdf" target="_blank" download>
-        <button className="resumeButton btn btn-lg btn-primary" onClick={downloadResume}>Download PDF</button>
+      <img className="resume" src="/resume.png"/>
+      <Link href="/caitlinESmithResume.pdf" target="_blank" download>
+        <button className="resumeButton btn btn-lg btn-primary">Download PDF</button>
       </Link>
       <style jsx>
             {`
