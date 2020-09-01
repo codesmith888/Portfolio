@@ -14,14 +14,6 @@ export default function Resume() {
       <Link href="/caitlinESmithResume.pdf" target="_blank" download>
         <button className="resumeButton btn btn-lg btn-primary">Download PDF</button>
       </Link>
-      <style jsx>
-            {`
-              #Resume {
-                color: #f88379;
-                font-family: 'Education-Pencil';
-              }
-            `}
-          </style>
     </div>
   )
 }

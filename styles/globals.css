@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Education-Pencil';
+  font-family: 'Balsamiq Sans', cursive;
   text-align: center;
   background: #d7d7d7;
 } 
@@ -14,18 +14,18 @@ body {
 
 .navBar {
   justify-content: space-evenly;
-  background-color: #F8b7B4;
-  color: #606060;
+  background-color: #FF69B4;
+  color: #000000;
   width: 100%;
   height: 10%;
-  font-family: 'Education-Pencil';
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 .navTitle {
   padding-left: 10vh;
   padding-right: 10vh;
   margin-bottom: 1vh;
-  color: #606060;
+  color: #000000;
   font-size: 32px;
 }
 
@@ -38,7 +38,7 @@ body {
 .navItem {
   padding-right: 3vh;
   margin-bottom: 1vh;
-  color: #606060;
+  color: #000000;
 }
 
 .navItem:hover {
@@ -50,7 +50,7 @@ body {
 }
 
 .navItem a {
-  color: #606060;
+  color: #000000;
 }
 
 .navItem a:hover {
@@ -62,6 +62,7 @@ body {
 #profilePhoto {
   width: 300px;
   height: 400px;
+  margin: 20px;
   text-align: right;
 }
 
@@ -75,11 +76,6 @@ body {
   justify-content: space-evenly;
 }
 
-.appPic {
-  width: 400px;
-  height: 250px;
-}
-
 .row {
   width: 100%;
 }
@@ -87,10 +83,11 @@ body {
 
 .footer {
   justify-content: space-evenly;
-  background-color: #F8B7B4;
-  color: #606060;
+  background-color: #FF69B4;
+  color: #000000;
   width: 100%;
   height: 10%;
+  margin-top: 20px;
 }
 
 .container {
@@ -129,7 +126,7 @@ body {
 }
 
 .text {
-  background-color: #F8B7B4;
+  background-color: #FF69B4;
   color: white;
   font-size: 14px;
   padding: 5px 10px;
@@ -143,20 +140,9 @@ body {
   position: inline-block;
 }
 
-.projectTitles {
-  color: #606060;
-  text-align: center;
-}
-
-.description {
-  font-size: 24px;
-  color: #F8B7B4;
-  text-align: center;
-}
-
 .links {
   font-size: 24px;
-  color: #F8B7B4;
+  color: #FF69B4;
   text-align: center;
 }
 
@@ -172,8 +158,8 @@ li {
 .adulting101 {
   padding: 0;
   margin: 0;
-  color: #F8B7B4;
-  font-family: 'Education-Pencil';
+  color: #FF69B4;
+  font-family: 'Balsamiq Sans', cursive;
   text-align: center;
   background-image: url("/marble.png")
 }
@@ -181,8 +167,8 @@ li {
 .additionRocket {
   padding: 0;
   margin: 0;
-  color: #F8B7B4;
-  font-family: 'Education-Pencil';
+  color: #FF69B4;
+  font-family: 'Balsamiq Sans', cursive;
   text-align: center;
   background-image: url("/marble.png")
 }
@@ -190,22 +176,22 @@ li {
 .worldOfWonder {
   padding: 0;
   margin: 0;
-  color: #F8B7B4;
-  font-family: 'Education-Pencil';
+  color: #FF69B4;
+  font-family: 'Balsamiq Sans', cursive;
   text-align: center;
   background-image: url("/marble.png")
 }
 
 #resumeButton {
-  background-color: #606060;
-  color: #F8B7B4;
+  background-color: #000000;
+  color: #FF69B4;
   margin-top: 5%;
-  border-color: #F8B7B4;
+  border-color: #FF69B4;
 }
 
 #resumeButton:hover {
-  background-color: #F8B7B4;
-  color: #606060;
+  background-color: #FF69B4;
+  color: #000000;
 }
 
 .skillsRowOne {
@@ -216,4 +202,47 @@ li {
   text-align: center; 
   width: 80%;
   height: 90%;
+}
+
+.projectTitles {
+  color: #FF69B4;
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+  margin-top: 5%;
+  font-size: 5vw;
+}
+
+.projectDescription {
+  color: #000000;
+  font-family: 'Balsamiq Sans', cursive;
+  text-align: center;
+}
+
+.description {
+  color: #000000;
+  font-family: 'Balsamiq Sans', cursive;
+  text-align: center;
+}
+
+.links {
+  color: #000000;
+  font-family: 'Balsamiq Sans', cursive;
+  text-align: center;
+}
+
+.appText {
+  background-color: #FF69B4;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  height: 40px;
+  margin-top: 50px;
+}
+
+.row {
+  text-align: center;
+}
+
+.directions {
+  text-align: center; 
 }

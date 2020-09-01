@@ -13,19 +13,7 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="UTF-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous"></link>
-        <style jsx global>
-              {`
-                @font-face {
-                  font-family: 'Education-Pencil';
-                  src:url(font) format('woff'),
-                      url('Education-Pencil.ttf.svg#Education-Pencil') format('svg'),
-                      url('Education-Pencil.ttf.eot'),
-                      url('Education-Pencil.ttf.eot?#iefix') format('embedded-opentype'); 
-                  font-weight: normal;
-                  font-style: normal;
-                }
-              `}
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"></link>
         <Component {...pageProps} />
     </div>
   )

@@ -23,7 +23,9 @@ export default function Navbar() {
               </ExternalLink>
             </li>
             <li className="navItem">
-              <img className="socialMediaLinks" src="/envelope.png" />
+              <ExternalLink href="mailto:caitlinelizabeth888@gmail.com">
+                <img className="socialMediaLinks" src="/envelope.png" />
+              </ExternalLink>
             </li>
           </ul>
       </nav>

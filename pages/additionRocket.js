@@ -2,6 +2,7 @@ import Navbar from '../components/navbar'
 import { ExternalLink } from 'react-external-link'
 
 
+
 export default function additionRocket() {
   return (
     <div className="additionRocket">

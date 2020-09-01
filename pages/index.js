@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Link from 'next/link'
+import { ExternalLink } from 'react-external-link'
 
 
 export default function Home() {
@@ -21,38 +22,28 @@ export default function Home() {
         <meta charset="UTF-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"></link>
         </Head>
-        <style jsx global>
-              {`
-                @font-face {
-                  font-family: 'Education-Pencil';
-                  src:url(font) format('woff'),
-                      url('Education-Pencil.ttf.svg#Education-Pencil') format('svg'),
-                      url('Education-Pencil.ttf.eot'),
-                      url('Education-Pencil.ttf.eot?#iefix') format('embedded-opentype'); 
-                  font-weight: normal;
-                  font-style: normal;
-                }
-              `}
-        </style>
-    
-
+  
       <main> 
         <Navbar />
         <div className={styles.home}>
           <div className="row">
             <div className="col">
-              <h1 className={styles.title}>Hi! I'm Caitlin:</h1>
-              <h2 className={styles.introTwo}>Full stack web developer, educator and lifelong learner with a passion for creating new and innovative ways to present information and ideas. An effective communicator and collaborator motivated by the opportunity to combine education and technology in order to produce data-driven outcomes, imaginative ideas and products that inspire. </h2>
-              <Link href="/caitlinESmithResume.pdf" target="_blank" download>
-                <button id= {styles.resumeButton} className="btn btn-lg btn-primary">Resume</button>
-              </Link>
+              <h1 className={styles.title}>Hi, I'm Caitlin!</h1>
             </div>
             <div className="col">
-              <img id={styles.profilePhoto} src="/caitlinCropped.png"/> 
+              <img id={styles.profilePhoto} src="/caitlin.png"/> 
             </div>
           </div>
-         
+          <div className="row">
+            <h2 className={styles.introTwo}>I am an educator and software developer with a focus on producing data-driven outcomes, imaginative ideas and products that inspire. </h2>
+          </div>
+          <div className="row" id="resumeButtonRow">
+            <Link href="/caitlinESmithResume.pdf" target="_blank" download>
+              <button id= {styles.resumeButton} className="btn btn-lg btn-primary">Resume</button>
+            </Link>
+         </div>
           <h1 className={styles.skillsTitle}>Skills:</h1>
           <div className = "row">
             <div className=" container col">
@@ -118,38 +109,56 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h1 className={styles.title}>Projects</h1>
+          <h1 className={styles.title}>Recent Projects:</h1>
           <div className="row">
-            <div className="col">
               <h3 className={styles.projectTitles}>Addition Rocket</h3>
-              <p className={styles.projectDescription}>Launch your way to addition fluency! Educational web application built using Javascript, HTML and CSS that focuses on addition fluency.</p>
-            </div>
-            <div className="col">
-              <Link href="/additionRocket">
-                <img className={styles.appPic} src="/additionRocket.png" />
-              </Link>
+              <ExternalLink href="https://github.com/codesmith888/Addition-Rocket">
+                <img className={styles.githubLink} src="/githublogo.png" />
+              </ExternalLink>
+          </div>
+          <div className="row">
+            <p className={styles.projectDescription}>Launch your way to addition fluency! Educational web application built using Javascript, HTML and CSS that focuses on addition fluency.</p>
+          </div>
+          <div className="row">
+            <ExternalLink className= {styles.container2} href="https://codesmith888.github.io/Addition-Rocket/">
+              <img className={styles.appPic} src="/additionRocket.png" />
+            </ExternalLink>
+            <div className={styles.appText}>
+              <div className={styles.appTextWords}>Click to Play!</div>
             </div>
           </div>
           <div className="row">
-            <div className="col">
-              <h3 className={styles.projectTitles}>Adulting 101: Dinner Party Edition</h3>
-              <p className={styles.projectDescription}>Full stack web application built using NodeJS, Express, MySql and Sequelize with full RESTful routing. Users can create accounts and save recipes and menus</p>
-            </div>
-            <div className="col">
-              <Link href="/adulting101">
-                <img className={styles.appPic} src="/adulting101.png"/>
-              </Link>
+            <h3 className={styles.projectTitleAdulting}>Adulting 101: Dinner Party Edition</h3>
+            <ExternalLink href="https://github.com/codesmith888/Adulting-101_Dinner_Party_Edition">
+              <img className={styles.githubLink} src="/githublogo.png" />
+            </ExternalLink>
+          </div>
+          <div className="row">
+            <p className={styles.projectDescription}>Full stack web application built using NodeJS, Express, MySql and Sequelize with full RESTful routing. Users can create accounts and save recipes and menus</p>
+          </div>
+          <div className="row">
+            <ExternalLink className= {styles.container2} href="https://adulting101-dinnerpartyedition.herokuapp.com/">
+              <img className={styles.appPic} src="/adulting101.png"/>
+            </ExternalLink>
+            <div className={styles.appText}>
+              <div className={styles.appTextWords}>Click to check it out online!</div>
             </div>
           </div>
           <div className="row">
-            <div className="col">
-              <h3 className={styles.projectTitles}>World of Wonder</h3>
-              <p className={styles.projectDescription}>an interactive full-stack web application built and designed with a team of four developers. Built with MongoDB, MERN-auth, ReactJS, NodeJS and CSS</p>
-            </div>
-            <div className="col">
-              <Link href="/worldOfWonder">
-                <img className={styles.appPic} src="/worldOfWonder.png" />
-              </Link>
+            <h3 className={styles.projectTitles}>World of Wonder</h3>
+            <ExternalLink href="https://github.com/codesmith888/World-of-Wonder-frontend/blob/master/README.md">
+              <img className={styles.githubLink} src="/githublogo.png" />
+            </ExternalLink>
+          </div>
+          <div className="row">
+            <p className={styles.projectDescription}>An interactive full-stack web application built and designed with a team of four developers. Built with MongoDB, MERN-auth, ReactJS, NodeJS and CSS</p>
+          </div>
+          <div className="row">
+            <ExternalLink className= {styles.container2} href="https://condescending-spence-15bcf7.netlify.app/">
+              <img className={styles.appPic} src="/worldOfWonder.png" />
+            </ExternalLink>
+            <div className={styles.appText}>
+              <div className={styles.appTextWords}>Click to check it out online!</div>
             </div>
           </div>
           <footer className="footer">
@@ -157,16 +166,6 @@ export default function Home() {
           </footer>
           </div>
       </main>
-
-          <style jsx>
-            {`
-              #home {
-                color: #DAF8DD;
-                font-family: 'Education-Pencil';
-              }
-            `}
-          </style>
-      
   </div>
   )
 }
