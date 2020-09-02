@@ -6,10 +6,10 @@ import { ExternalLink } from 'react-external-link'
 import Navbar from 'react-bootstrap/Navbar'
 
 
-export default function Nav() {
+export default function nav() {
 
   return (
-    <div className="navBar">
+    <div className="navigation">
         <nav id={styles.nav} className="navbar-custom navbar navbar-fixed-top navbar-expand-lg">
           <a className="navTitle" href="/">Caitlin Smith</a>
           <ul className="nav">
