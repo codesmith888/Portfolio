@@ -20,7 +20,7 @@ export default function Home() {
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <meta charset="UTF-8"></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"></meta>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"></link>
         </Head>
@@ -31,6 +31,7 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <h1 className={styles.title}>Hi, I'm Caitlin!</h1>
+              <h3 className={styles.subtitle}>Educator and Web Developer</h3>
             </div>
             <div className="col">
               <img id={styles.profilePhoto} src="/caitlin.png"/> 
@@ -109,7 +110,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h1 className={styles.title}>Recent Projects:</h1>
+          <h1 className={styles.titleProjects}>Recent Projects:</h1>
           <div className="row">
               <h3 className={styles.projectTitles}>Addition Rocket</h3>
               <ExternalLink href="https://github.com/codesmith888/Addition-Rocket">
@@ -134,7 +135,7 @@ export default function Home() {
             </ExternalLink>
           </div>
           <div className="row">
-            <p className={styles.projectDescription}>Full stack web application built using NodeJS, Express, MySql and Sequelize with full RESTful routing. Users can create accounts and save recipes and menus</p>
+            <p className={styles.projectDescription}>Full stack web application built using Node.js, Express.js, MySql and Sequelize with full RESTful routing. Users can create accounts and save recipes and menus.</p>
           </div>
           <div className="row">
             <ExternalLink className= {styles.container2} href="https://adulting101-dinnerpartyedition.herokuapp.com/">
@@ -151,7 +152,7 @@ export default function Home() {
             </ExternalLink>
           </div>
           <div className="row">
-            <p className={styles.projectDescription}>An interactive full-stack web application built and designed with a team of four developers. Built with MongoDB, MERN-auth, ReactJS, NodeJS and CSS</p>
+            <p className={styles.projectDescription}>World of Wonder brings the  museum to you! An interactive full-stack web application built and designed with a team of four developers. Technologies MongoDB, MERN-auth, React.js, Node.js and CSS</p>
           </div>
           <div className="row">
             <ExternalLink className= {styles.container2} href="https://condescending-spence-15bcf7.netlify.app/">
