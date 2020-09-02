@@ -3,13 +3,14 @@ import Link from 'next/link'
 import {useEffect} from 'react'
 import styles from '../styles/Home.module.css'
 import { ExternalLink } from 'react-external-link'
+import Navbar from 'react-bootstrap/Navbar'
 
 
-export default function Navbar() {
+export default function Nav() {
 
   return (
     <div className="navBar">
-        <nav id={styles.nav} className="navbar-custom navbar">
+        <nav id={styles.nav} className="navbar-custom navbar navbar-fixed-top navbar-expand-lg">
           <a className="navTitle" href="/">Caitlin Smith</a>
           <ul className="nav">
             <li className="navItem">
