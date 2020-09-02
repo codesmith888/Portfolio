@@ -112,10 +112,12 @@ export default function Home() {
           </div>
           <h1 className={styles.titleProjects}>Recent Projects:</h1>
           <div className="row">
+            <ExternalLink className= {styles.container2} href="https://codesmith888.github.io/Addition-Rocket/">
               <h3 className={styles.projectTitles}>Addition Rocket</h3>
-              <ExternalLink href="https://github.com/codesmith888/Addition-Rocket">
-                <img className={styles.githubLink} src="/githublogo.png" />
-              </ExternalLink>
+            </ExternalLink>
+            <ExternalLink href="https://github.com/codesmith888/Addition-Rocket">
+              <img className={styles.githubLink} src="/githublogo.png" />
+            </ExternalLink>
           </div>
           <div className="row">
             <p className={styles.projectDescription}>Launch your way to addition fluency! Educational web application built using Javascript, HTML and CSS that focuses on addition fluency.</p>
@@ -129,7 +131,9 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <h3 className={styles.projectTitleAdulting}>Adulting 101: Dinner Party Edition</h3>
+            <ExternalLink className= {styles.container2} href="https://adulting101-dinnerpartyedition.herokuapp.com/">
+              <h3 className={styles.projectTitleAdulting}>Adulting 101: Dinner Party Edition</h3>
+            </ExternalLink>
             <ExternalLink href="https://github.com/codesmith888/Adulting-101_Dinner_Party_Edition">
               <img className={styles.githubLink} src="/githublogo.png" />
             </ExternalLink>
@@ -146,7 +150,9 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <h3 className={styles.projectTitles}>World of Wonder</h3>
+            <ExternalLink className= {styles.container2} href="https://condescending-spence-15bcf7.netlify.app/">
+              <h3 className={styles.projectTitles}>World of Wonder</h3>
+            </ExternalLink>
             <ExternalLink href="https://github.com/codesmith888/World-of-Wonder-frontend/blob/master/README.md">
               <img className={styles.githubLink} src="/githublogo.png" />
             </ExternalLink>
