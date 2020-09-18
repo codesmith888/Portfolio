@@ -31,14 +31,15 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <h1 className={styles.title}>Hi, I'm Caitlin!</h1>
-              <h3 className={styles.subtitle}>Educator and Web Developer</h3>
+              <h3 className={styles.subtitle}>Web Developer and Educator</h3>
             </div>
             <div className="col">
               <img id={styles.profilePhoto} src="/caitlin.png"/> 
             </div>
           </div>
           <div className="row">
-            <h2 className={styles.introTwo}>I am an educator and software developer with a focus on producing data-driven outcomes, imaginative ideas and products that inspire. </h2>
+            <h2 className={styles.introTwo}>Full stack web developer, multilingual educator and manager, with diverse experiences leading to a passion for creating new and innovative ways to combine education and technology. An effective communicator and collaborator motivated by the opportunity to produce data-driven outcomes, imaginative ideas and products that inspire.</h2>
+            <h2 className={styles.introTwo}>When I am not singing letter and number songs (day job) or programming (passion/internship), you can find me volunteering through my church, spending time with family and friends (board games!) or hiking.</h2>
           </div>
           <div className="row" id="resumeButtonRow">
             <Link href="/caitlinESmithResume.pdf" target="_blank" download>
@@ -108,6 +109,23 @@ export default function Home() {
               <div className="skillName">
                 <div className="text">Express</div>
               </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="container col">
+              <div className="text">Spanish Speaker</div>
+            </div>
+            <div className="container col">
+              <div className="text">Communication</div>
+            </div>
+            <div className="container col">
+              <div className="text">Collaboration</div>
+            </div>
+            <div className="container col">
+              <div className="text">Outcomes Assessment</div>
+            </div>
+            <div className="container col">
+              <div className="text">Data Analysis</div>
             </div>
           </div>
           <h1 className={styles.titleProjects}>Recent Projects:</h1>
