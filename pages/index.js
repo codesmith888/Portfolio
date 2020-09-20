@@ -42,7 +42,7 @@ export default function Home() {
             <h2 className={styles.introTwo}>When I am not singing letter and number songs (day job) or programming (passion/internship), you can find me volunteering through my church, spending time with family and friends (board games!) or hiking.</h2>
           </div>
           <div className="row" id="resumeButtonRow">
-            <Link href="/caitlinESmithResume.pdf" target="_blank" download>
+            <Link href="/CaitlinSmithResume.pdf" target="_blank" download>
               <button id= {styles.resumeButton} className="btn btn-lg btn-primary">Resume</button>
             </Link>
          </div>

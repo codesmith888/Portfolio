@@ -11,7 +11,7 @@ export default function Resume() {
     <div id="Resume">
       <Navbar />
       <img className="resume" src="/resume.png"/>
-      <Link href="/caitlinESmithResume.pdf" target="_blank" download>
+      <Link href="/CaitlinSmithResume.pdf" target="_blank" download>
         <button className="resumeButton btn btn-lg btn-primary">Download PDF</button>
       </Link>
     </div>
