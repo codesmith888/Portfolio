@@ -3,10 +3,10 @@ import Link from 'next/link'
 import {useEffect} from 'react'
 import styles from '../styles/Home.module.css'
 import { ExternalLink } from 'react-external-link'
-import Navbar from 'react-bootstrap/Navbar'
 
 
-export default function nav() {
+
+export default function Nav() {
 
   return (
     <div className="navigation">

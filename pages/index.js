@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { useState } from 'react'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/nav'
+import Nav from '../components/nav'
 import Link from 'next/link'
 import { ExternalLink } from 'react-external-link'
 
@@ -9,9 +9,6 @@ import { ExternalLink } from 'react-external-link'
 export default function Home() {
   
 
-  function downloadResume() {
-
-  }
   
   return (
     <div>
@@ -26,7 +23,7 @@ export default function Home() {
         </Head>
   
       <main> 
-        <Navbar />
+        <Nav />
         <div className={styles.home}>
           <div className="row">
             <div className="col">
